@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #fff0f5, #f0f8ff);
+  padding: 2rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+.discover-btn {
+  background-color: #ffb347;
+  padding: 0.7rem 1.3rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px #aaa;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.discover-btn:hover {
+  background-color: #ff9800;
+  transform: scale(1.05);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+/* Shared styling */
+.cat-card, .ban-list, .history {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.cat-card img {
+  max-width: 60%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.attributes button,
+.ban-list button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.attributes button {
+  background: #ffe066;
+}
+
+.attributes button:hover {
+  background-color: #ffd43b;
+  transform: scale(1.05);
+}
+
+.ban-list button {
+  background: #ffc9c9;
+}
+
+.ban-list button:hover {
+  background-color: #ff9999;
+  transform: scale(1.05);
+}
+
+.ban-subtitle {
+  font-style: italic;
+  color: #666;
+}
+
+.history {
+  max-height: 580px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 6px;
+}
+
+.history::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.history ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.history-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 0.8rem;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
